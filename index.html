@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="main.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Odin Project - Project: Sign up form</title>
 </head>
+
 <body>
-    
+    <section class="container">
+        <section class="image-container">
+            <img src="images/image-one.jpg" alt="">
+        </section>
+        <section class="text-container">
+            <div class="top">
+                <div>
+                    <p>This is not a real online service! You know you need something like this in your life to help you
+                        realise your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to</p>
+                </div>
+            </div>
+            <div class="middle">
+                <p>Let's do this!</p>
+                <div>
+                    <form id="signup" action="https://httpbin.org/post" method="post">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="f_name">FIRST NAME</label>
+                                <input type="text" id="f_name" name="first_name">
+                            </div>
+                            <div class="form-col">
+                                <label for="l_name">LAST NAME</label>
+                                <input type="text" id="l_name" name="last_name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="mail">EMAIL</label>
+                                <input type="email" id="mail" name="email">
+                            </div>
+                            <div class="form-col">
+                                <label for="p_num">PHONE NUMBER</label>
+                                <input type="number" id="p_num" name="phone_number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="p_word">PASSWORD</label>
+                                <input type="password" id="p_word" name="password">
+                            </div>
+                            <div class="form-col">
+                                <label for="con_pass">CONFIRM PASSSWORD</label>
+                                <input type="password" id="con_pass" name="password">
+                            </div>
+                        </div>
+                    </form>
+                    <p class="error-message"></p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <button form="signup" type="submit">Create Account</button>
+                    <p>Already have an account? <a  class="account-query" href="https://www.sellr.com/">Log in</a></p>
+                </div>
+            </div>
+        </section>
+    </section>
 </body>
+
 </html>

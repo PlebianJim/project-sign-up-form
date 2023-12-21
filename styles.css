@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    display: flex;
+    height: 100%;
+    width: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(238, 230, 230);
+}
+
+.top div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.top div p {
+    margin-top: 4%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.5),
+        inset 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.middle p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-row {
+    display: flex;
+    gap: 80%;
+    width: 20%;
+    margin: 3%;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-col label {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.form-col input {
+    width: 200px;
+}
+
+.bottom {
+    width: 100%;
+    background-color: rgb(238, 230, 230);
+    padding: 5%;
+}
+
+.bottom div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    padding: 3%;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 97, 52);
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.account-query {
+    text-decoration: none;
+    color: rgb(52, 97, 52);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4287f5;
+    box-shadow: 0 0 0 2px #4287f5;
+}
+
+/* Style for invalid input */
+input:invalid {
+    border-color: red;
+}
+
+/* Style for valid non-empty input */
+input:valid:not(:empty) {
+    border-color: green;
+}
+
+.error {
+    color: red;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
